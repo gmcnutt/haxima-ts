@@ -28,9 +28,6 @@ static pointer ts_sdl2_init(scheme *sc, pointer args)
         /* Cleanup SDL on exit. */
         atexit(SDL_Quit);
 
-        /* Set logging level. */
-        log_init();
-
         return sc->T;
 }
 
